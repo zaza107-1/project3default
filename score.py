@@ -1,16 +1,26 @@
+import json
+import numpy as np
+import os
+from sklearn.externals import joblib
+
 def init():
-    from sklearn.externals import joblib
-    # load the saved model file
     global model
-    model = joblib.load('automl_best_model.pkl')
+    model_path = os.path.join(os.getenv('AutoML_heart'), 'automl_best_model.pkl')
+    model = joblib.load(model_path)
 
 def run(data):
+    try:
+        data = np.array(json.loads(data))
+        result = model.predict(data)
+        # You can return any data type, as long as it is JSON serializable.
+        return result.tolist()
+    except Exception as e:
+        error = str(e)
+        return error
     
-    
+init()
+run(data)
 
-def main():
-    # Load the Azure ML libraries to generate a schema
-    
 
 if __name__ == "__main__":
     main()
