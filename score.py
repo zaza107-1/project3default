@@ -1,7 +1,7 @@
 import json
 import numpy as np
 import os
-from sklearn.external import joblib
+from sklearn.externals import joblib
 
 def init():
     global model
@@ -18,9 +18,3 @@ def run(data):
         error = str(e)
         return error
     
-init()
-run(data)
-
-
-if __name__ == "__main__":
-    main()
