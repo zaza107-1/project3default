@@ -34,7 +34,12 @@ Our primary metric will be 'Accuracy'.
 ### Results
 The best model that we got is a VotingEnsemble model with an accuracy of 0.87299
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoML_bestmodel.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoML_bestmodel.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoMLrundetailwidget2.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/auto_ML_completed2.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/automlmodels.jpg)
+![]()
 
 ## Hyperparameter Tuning
 We used the hyperparameter tuning with a random sampling of parameter C and max_iter and a median stopping policy as the early termination policy.
@@ -44,12 +49,18 @@ About max_iterations we used 50,100 and 150.
 ### Results
 We found the same accuracy results for all the possible combinations. In the future we should try to change the parameters to see if we can get a better accuracy.
 
-*TODO* Remeber to provide screenshots of the `RunDetails` widget as well as a screenshot of the best model trained with it's parameters.
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/automlmodels.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter2.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter2.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter_child_runs.jpg)
 
 ## Model Deployment
 Using the Python SDK and the jupyter notebook we deployed the best_run of the models got through the AutoML process.
 First we register the model and then we deploy it.
 We got and endpoint with authentication disabled, where we can send a request and retrieve a result of the predicted column Death_event.
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/healthy_endpoint.jpg)
+
 
 ## Screen Recording
 Here you can find the link with the screen recording of the model working properly.
