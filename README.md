@@ -62,5 +62,5 @@ We got and endpoint with authentication disabled, where we can send a request an
 
 ## Screen Recording
 Here you can find the link with the screen recording of the model working properly.
-
+https://youtu.be/WRmW5INRNLc
 
