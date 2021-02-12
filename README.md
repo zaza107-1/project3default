@@ -1,5 +1,3 @@
-*NOTE:* This file is a template that you can use to create the README for your project. The *TODO* comments below will highlight the information you should be sure to include.
-
 # Prediction of cardiovascular diseases using Azure Machine Learning workspace
 
 Our project is about cardiovascular diseases. 
