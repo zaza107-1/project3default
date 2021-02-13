@@ -90,6 +90,11 @@ The best hyperparameter value could be any of the 3 values selected for C and ma
 - Hyperparameter model child runs:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter_child_runs.jpg)
 
+- Hyperdrive values:
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparam_best_model_arguments.jpg)
+
+
+
 ## Model Deployment
 Using the Python SDK and the jupyter notebook we deployed the best_run of the models got through the AutoML process.
 First we register the model and then we deploy it.
