@@ -108,5 +108,6 @@ We could also try to get a dataset with more observations, as to train better bo
 
 ## Screen Recording
 Here you can find the link with the screen recording of the model working properly.
+
 https://youtu.be/WRmW5INRNLc
 
