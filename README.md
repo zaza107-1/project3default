@@ -25,7 +25,7 @@ We will use the advantages of the AutoML from Azure to obtain the best model to 
 We are accesing the data through our notebook and loading it in our datastore.
 
 ## Automated ML
-In the AutoML processa, we are doing a Classification regression algorithm with the labeled data.
+In the AutoML process, we are doing a Classification task with labeled and discrete data (0 or 1 in this case). Classification is a type of supervised learning.
 Our primary metric is 'Accuracy'.
 The settings in our AutoML experiment are:
 compute_target: we select a compute cluster that already exist or create one new with our specifications
@@ -42,6 +42,9 @@ debug_log = "automl_errors.log"
 
 ### Results
 The best model that we got is a VotingEnsemble model with an accuracy of 0.87299
+From the Azure documentation we can see that: Automated machine learning uses both voting and stacking ensemble methods for combining models.
+Voting: predicts based on the weighted average of predicted class probabilities (for classification tasks) or predicted regression targets (for regression tasks).
+
 
 - AutoML best model:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoML_bestmodel.jpg)
@@ -64,7 +67,7 @@ The best model that we got is a VotingEnsemble model with an accuracy of 0.87299
 
 
 ## Hyperparameter Tuning
-We used the hyperparameter tuning with a random sampling of parameter C and max_iter and a median stopping policy as the early termination policy.
+We performed a Logisticregression task and we used the hyperparameter tuning with a random sampling of parameter C and max_iter and a median stopping policy as the early termination policy.
 About the parameter C we used three possible values, 1,10 and 100.
 About max_iterations we used 50,100 and 150.
 
