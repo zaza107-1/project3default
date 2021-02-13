@@ -102,6 +102,10 @@ We got and endpoint with authentication disabled, where we can send a request an
 - Active healthy endpoint:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/healthy_endpoint.jpg)
 
+- Endopoint response (with prediciton of value 1):
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/endpoint%20response.jpg)
+
+
 ## How to improve the model
 We should try with different values of C and max_iter in the hyperparameter tuning process as to get better results for the Accuracy metric.
 We could also try to get a dataset with more observations, as to train better both models to check if we can improve the accuracy with a larger dataset.
