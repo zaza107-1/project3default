@@ -49,6 +49,8 @@ The best model that we got is a VotingEnsemble model with an accuracy of 0.87299
 
 - AutoML rundetail widget:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoMLrundetailwidget.jpg)
+
+- Voting Ensemble model:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoMLrundetailwidget2.jpg)
 
 - AutoML completed run:
@@ -71,7 +73,7 @@ About max_iterations we used 50,100 and 150.
 
 ### Results
 We found the same accuracy results for all the possible combinations. In the future we should try to change the parameters to see if we can get a better accuracy.
-All possible combinations of C and max_iter gave the same accuracy of 0.75
+All possible combinations of C and max_iter gave the same accuracy of 0.7575
 The best hyperparameter value could be any of the 3 values selected for C and max_iter.
 
 - AutoML model result:
@@ -94,6 +96,7 @@ First we register the model and then we deploy it.
 We got and endpoint with authentication disabled, where we can send a request and retrieve a result of the predicted column Death_event.
 
 - Example of data input:
+
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/example_data_input.jpg)
 
 - Active healthy endpoint:
