@@ -43,21 +43,21 @@ debug_log = "automl_errors.log"
 ### Results
 The best model that we got is a VotingEnsemble model with an accuracy of 0.87299
 
-AutoML best model:
+- AutoML best model:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoML_bestmodel.jpg)
 
 
-AutoML rundetail widget:
+- AutoML rundetail widget:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoMLrundetailwidget.jpg)
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoMLrundetailwidget2.jpg)
 
-AutoML completed run:
+- AutoML completed run:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/auto_ML_completed2.jpg)
 
-AutoML models:
+- AutoML models:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/automlmodels.jpg)
 
-Best run metrics for the voting ensemble model:
+- Best run metrics for the voting ensemble model:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/bestautomlmetrics.jpg)
 
 
@@ -65,26 +65,27 @@ Best run metrics for the voting ensemble model:
 We used the hyperparameter tuning with a random sampling of parameter C and max_iter and a median stopping policy as the early termination policy.
 About the parameter C we used three possible values, 1,10 and 100.
 About max_iterations we used 50,100 and 150.
-Here we can see a picture of the two parameters and the range that we used:
+
+- Here we can see a picture of the two parameters and the range that we used:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/param_sampling.jpg) 
 
 ### Results
 We found the same accuracy results for all the possible combinations. In the future we should try to change the parameters to see if we can get a better accuracy.
 All possible combinations of C and max_iter gave the same accuracy of 0.75
+The best hyperparameter value could be any of the 3 values selected for C and max_iter.
 
-
-AutoML model result:
+- AutoML model result:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/automlmodels.jpg)
 
-Hyperparameter model result:
+- Hyperparameter model result:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter.jpg)
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter2.jpg)
 
 
-Hyperparameter best run:
+- Hyperparameter best run:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter_best_run.jpg)
 
-Hyperparameter model child runs:
+- Hyperparameter model child runs:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/hyperparameter_child_runs.jpg)
 
 ## Model Deployment
@@ -92,7 +93,10 @@ Using the Python SDK and the jupyter notebook we deployed the best_run of the mo
 First we register the model and then we deploy it.
 We got and endpoint with authentication disabled, where we can send a request and retrieve a result of the predicted column Death_event.
 
-Active healthy endpoint:
+- Example of data input:
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/example_data_input.jpg)
+
+- Active healthy endpoint:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/healthy_endpoint.jpg)
 
 ## How to improve the model
