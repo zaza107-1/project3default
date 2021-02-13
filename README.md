@@ -42,9 +42,13 @@ debug_log = "automl_errors.log"
 
 ### Results
 The best model that we got is a VotingEnsemble model with an accuracy of 0.87299
-From the Azure documentation we can see that: Automated machine learning uses both voting and stacking ensemble methods for combining models.
+From the Azure documentation we can see that: 
+Automated machine learning uses both voting and stacking ensemble methods for combining models.
 Voting: predicts based on the weighted average of predicted class probabilities (for classification tasks) or predicted regression targets (for regression tasks).
 
+- Voting Ensemble parameters and weights between different models:
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/ensemble%20algorithms.jpg)
+![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/ensemble%20properties.jpg)
 
 - AutoML best model:
 ![](https://github.com/zaza107-1/project3default/blob/branch2/screenshots/autoML_bestmodel.jpg)
